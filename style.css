@@ -17,7 +17,7 @@ body {
 
 @keyframes float {
   0% { transform: translateY(0px) scale(1); }
-  50% { transform: translateY(-20px) scale(1.05); }
+  50% { transform: translateY(-20px) scale(1.5); }
   100% { transform: translateY(0px) scale(1); }
 }
 
@@ -47,6 +47,24 @@ body {
   right: -5%;
 }
 
+.blob3 {
+  width: 300px;
+  height: 300px;
+  background: #7285bb50;
+  bottom: -130%;
+  left: 10%;
+  z-index: -3;
+}
+
+.blob4 {
+  width: 300px;
+  height: 300px;
+  background: #8ec5b730;
+  bottom: -220%;
+  left: 80%;
+  z-index: -2;
+}
+
 section {
 min-height: auto;
 padding: 4rem 2rem;
@@ -58,7 +76,7 @@ padding: 4rem 2rem;
     height: 150px;
     object-fit: cover;
     border-radius: 50%;
-    border: 4px solid #fff;
+    border: 3px solid #ffffff;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
 }
@@ -70,7 +88,17 @@ padding: 4rem 2rem;
 }
 
 .hero-container {
-    min-width: 600px;
+  min-width: 400px;
+
+  border-radius: 1rem;
+  padding: 2rem;
+
+  background:
+    radial-gradient(ellipse at top left, #8a8ea180, transparent 100%),
+    radial-gradient(circle at bottom right, #2ebd9920, transparent 80%);
+  border: 1px solid #FFFFFF10;
+  box-shadow: 0 0 20px #ffffff20;
+  transition: box-shadow 0.3s ease-in-out;
 }
 
 .left-panel {
@@ -147,6 +175,18 @@ padding: 4rem 2rem;
   opacity: 1;
 }
 
+.repo-link {
+  color: #ffffff;
+  transition: 0.3s ease;
+}
+
+.repo-link:hover {
+  color: #5cc2ad;
+  transition: 0.3s ease;
+}
+
+
+
 
 
 /* glass-card.css */
@@ -210,13 +250,19 @@ padding: 4rem 2rem;
   transition: 0.3s ease;
 }
 
+.glass-card:hover .badge-skill {
+  background-color: #b2bebc20;
 
+  border: 1px solid #49998930;
+}
 
+/* Chips Go Lighter --
 .glass-card:hover .badge-skill {
   background-color: #5cc2ad80;
   color: #ffffff;
   border: 1px solid #5cc2ad50;
 }
+*/
 
 .badge-skill:hover {
   scale: 1.1;
