@@ -88,7 +88,7 @@ padding: 4rem 2rem;
 }
 
 .hero-container {
-  min-width: 400px;
+  min-width: 300px;
 
   border-radius: 1rem;
   padding: 2rem;
@@ -121,14 +121,28 @@ padding: 4rem 2rem;
   color: #ffffff;
 }
 
-.nav-link {
-  color: #ffffff;
-  padding-left: 0;
+/* NAV BAR */
+.nav-indicator {
+  display: inline-block;
+  width: 3rem;
+  height: 1.2px;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
 }
 
-.nav-link:hover {
+.nav-text {
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.nav-link-custom:hover .nav-indicator, 
+.nav-link-custom:focus-visible .nav-indicator {
+  width: 5rem;
+  background-color: #96D9CC;
+}
+
+.nav-link-custom:hover .nav-text {
   color: #96D9CC;
-  text-decoration: none;
 }
 
 @media (max-width: 991.98px) {
@@ -256,14 +270,6 @@ padding: 4rem 2rem;
   border: 1px solid #49998930;
 }
 
-/* Chips Go Lighter --
-.glass-card:hover .badge-skill {
-  background-color: #5cc2ad80;
-  color: #ffffff;
-  border: 1px solid #5cc2ad50;
-}
-*/
-
 .badge-skill:hover {
   scale: 1.1;
   margin-right: 0.45rem;
@@ -293,6 +299,24 @@ padding: 4rem 2rem;
 }
 
 
+/* Email Button */
+.email-button {
+  background-color: #5cc2ad20;
+  color: #5cc2ad;
+  border-radius: 50rem;
+  padding: 0.25rem 0.7rem;
+  font-size: 0.75rem;
+  margin-right: 0.4rem;
+  margin-top: 0.4rem;
+  display: inline-block;
+  border: 1px solid #FFFFFF10;
+  transition: 0.3s ease;
+}
 
+#contact:hover .email-button {
+  background-color: #5cc2ad80;
+  color: #ffffff;
+  border: 1px solid #5cc2ad50;
+}
 
 
